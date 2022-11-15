@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravix</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <style>
+        .overflow {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="body body-el">
+    <div class="wrapper">
+        <div class="cursor"></div>
+
+        <header class="header">
+            <div class="header__container-big">
+                <div class="header-left">
+                    <a href="#" class="header__logo">
+                        <img src="./img/Logo.svg" alt="logo" class="header__logo-img">
+                    </a>
+                    <div class="header__menu">
+                        <a href="#" class="header__menu-el">Наши проекты</a>
+                        <a href="#" class="header__menu-el">Чем мы занимаемся</a>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <a href="#" class="header__menu-el">О нас</a>
+                    <a href="tel:+7(495)777-00-00" class="header__menu-el">+7 (495) 777-00-00</a>
+
+                    <div class="header__phone-number">
+                        <a href="tel:+7(495)777-00-00">+7 (495) 777-00-00</a>
+                    </div>
+
+                    <div id="header__burger" class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <nav class="header__navigation">
+                    <ul class="header__menu-hide">
+                        <a href="#" class="header__menu-el">Наши проекты</a>
+                        <a href="#" class="header__menu-el">Чем мы занимаемся</a>
+                        <a href="#" class="header__menu-el">О нас</a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__hero">
+                <div class="hero__cosmo">
+                    <img src="./img/main__hero/cosmo.png" class="cosmo-img">
+                </div>
+                <div class="hero__connect">
+                    <div class="video__wrapper">
+                        <video autoplay muted class="connect__video" src="./videos/hero-decor.mp4"></video>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <div class="frame__motto">Могли бы делать хорошо, но перфекционизм зашкаливает</div>
+                    <div class="frame__connect">
+                        <a href="#" class="connect__link">Связаться с нами</a>
+                    </div>
+                </div>
+            </section>
+            <section class="main__portfolio">
+                <div class="portfolio__container-big">
+                    <div class="portfolio__headline headline">
+                        <img src="./img/main__portfolio/Headline.svg" class="portfolio__headline-img">
+                    </div>
+                    <div class="portfolio__portfolio">
+                        <div class="portfolio__card">
+                            <div class="card__head">
+                                <div class="card__date">2021</div>
+                                <a href="#" class="card__name">
+                                    <div class="title">The cave</div>
+                                    <div class="subtitle">Lounge bar</div>
+                                </a>
+                                <a href="#" class="card__link">
+                                    <img src="./img/icons/arrow.svg" class="card__link-icon">
+                                </a>
+                            </div>
+                            <a href="#" class="card__preview">
+                                <img src="./img/main__portfolio/card1.png" alt="Lounge bar the cave"
+                                    class="card__preview-img">
+                            </a>
+                        </div>
+
+                        <div class="portfolio__card">
+                            <div class="card__head">
+                                <div class="card__date">2021</div>
+                                <a href="#" class="card__name">
+                                    <div class="title">DDX Fitness</div>
+                                    <div class="subtitle">trifold brochure</div>
+                                </a>
+                                <a href="#" class="card__link">
+                                    <img src="./img/icons/arrow.svg" class="card__link-icon">
+                                </a>
+                            </div>
+                            <a href="#" class="card__preview">
+                                <img src="./img/main__portfolio/card2.png" alt="trifold brochure DDX Fitness"
+                                    class="card__preview-img">
+                            </a>
+                        </div>
+
+                        <div class="portfolio__card">
+                            <div class="card__head">
+                                <div class="card__date">2021</div>
+                                <a href="#" class="card__name">
+                                    <div class="title">Rybotorgovtsy</div>
+                                    <div class="subtitle">fish restaraunt</div>
+                                </a>
+                                <a href="#" class="card__link">
+                                    <img src="./img/icons/arrow.svg" class="card__link-icon">
+                                </a>
+                            </div>
+                            <a href="#" class="card__preview">
+                                <img src="./img/main__portfolio/card3.png" alt="fish restaraunt Rybotorgovtsy"
+                                    class="card__preview-img">
+                            </a>
+                        </div>
+
+                        <div class="portfolio__card">
+                            <div class="card__head">
+                                <div class="card__date">2021</div>
+                                <a href="#" class="card__name">
+                                    <div class="title">TELESNIY brand</div>
+                                    <div class="subtitle">organic cosmetic</div>
+                                </a>
+                                <a href="#" class="card__link">
+                                    <img src="./img/icons/arrow.svg" class="card__link-icon">
+                                </a>
+                            </div>
+                            <a href="#" class="card__preview">
+                                <img src="./img/main__portfolio/card4.png" alt="the cave" class="card__preview-img">
+                            </a>
+                        </div>
+
+                        <div class="portfolio__card button-more">
+                            <a href="#" class="portfolio__button">
+                                <div class="button__plus">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="button__text">Все проекты</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__slider hidden">
+                <div class="overflow">
+                    <div class="slider-wrapper">
+                        <div class="slider__content">
+                            <div class="slider__container-big">
+                                <div class="slider__body">
+                                    <div class="body__wrapper">
+                                        <div class="slider__title">Чем мы занимаемся</div>
+                                        <ul class="slider__list">
+                                            <a href="#slide-1" data-action="switch" class="list__el active-el"
+                                                id="slide1">Брендинг и фирменный стиль</a>
+                                            <a href="#slide-2" data-action="switch" class="list__el"
+                                                id="slide2">Perfomance
+                                                design</a>
+                                            <a href="#slide-3" data-action="switch" class="list__el" id="slide3">Дизайн
+                                                сайтов и приложений</a>
+                                            <a href="#slide-4" data-action="switch" class="list__el" id="slide4">Motion
+                                                design</a>
+                                            <a href="#slide-5" data-action="switch" class="list__el"
+                                                id="slide5">Полиграфия
+                                                и наружная реклама</a>
+                                            <a href="#slide-6" data-action="switch" class="list__el" id="slide6">Дизайн
+                                                в
+                                                соц. сети</a>
+                                        </ul>
+                                        <div class="slider__bottom">
+                                            <marquee class="slider__live-line" behavior="alternate" direction="right">
+                                                <span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span><span>связаться с
+                                                    нами</span><span>связаться с нами</span>
+                                            </marquee>
+                                            <a href="#" class="slider__button"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__image-wrapper swiper-container hidden">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slider__image" id="firstSlide" data-hash="slide-1"
+                                    data-background="#1323e7">
+                                    <div class="empty__block"></div>
+                                    <img src="./img/main__slider/img1.png" class="slider-img">
+                                </div>
+
+                                <div class="swiper-slide slider__image" data-hash="slide-2" data-background="#9755f3">
+                                    <div class="empty__block"></div>
+                                    <img src="./img/main__slider/img2.png" class="slider-img">
+                                </div>
+
+                                <div class="swiper-slide slider__image" data-hash="slide-3" data-background="#b2d142">
+                                    <div class="empty__block"></div>
+                                    <img src="./img/main__slider/img3.png" class="slider-img">
+                                </div>
+
+                                <div class="swiper-slide slider__image" data-hash="slide-4" data-background="#e76c13">
+                                    <div class="empty__block"></div>
+                                    <img src="./img/main__slider/img4.png" class="slider-img">
+                                </div>
+
+                                <div class="swiper-slide slider__image" data-hash="slide-5" data-background="#ee1e78">
+                                    <div class="empty__block"></div>
+                                    <img src="./img/main__slider/img5.png" class="slider-img">
+                                </div>
+
+                                <div class="swiper-slide slider__image" data-hash="slide-6" data-background="#3a86ff">
+                                    <div class="empty__block"></div>
+                                    <img src="./img/main__slider/img6.png" class="slider-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__partners">
+                <div class="partners__container-big">
+                    <div class="partners__headline">
+                        <img src="./img/main__partners/Headline.svg" class="headline__img">
+                    </div>
+                    <div class="partners__slider">
+                        <div class="partners__slide">
+                            <div class="partners__slide-wrapper">
+                                <div class="logo">
+                                    <img src="./img/main__partners/logos/gazprom-logo.svg" class="partners__logo">
+                                </div>
+                                <p class="partners__about">
+                                    «Газпром нефть» – дочернее предприятие «Газпрома», появившееся в 2006 году.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="partners__slide">
+                            <div class="partners__slide-wrapper">
+                                <div class="logo">
+                                    <img src="./img/main__partners/logos/nestle-logo.svg" class="partners__logo">
+                                </div>
+                                <p class="partners__about">
+                                    Швейцарский крупнейший в мире производитель продуктов питания.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="partners__slide">
+                            <div class="partners__slide-wrapper">
+                                <div class="logo">
+                                    <img src="./img/main__partners/logos/philip-morris-logo.svg" class="partners__logo">
+                                </div>
+                                <p class="partners__about">
+                                    Американская табачная компания, один из крупнейших производителей сигарет в
+                                    мире.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="partners__slide">
+                            <div class="partners__slide-wrapper">
+                                <div class="logo">
+                                    <img src="./img/main__partners/logos/four-logo.svg" class="partners__logo">
+                                </div>
+                                <p class="partners__about">
+                                    Российский интернет-магазин товаров для животных
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="partners__slide">
+                            <div class="partners__slide-wrapper">
+                                <div class="logo">
+                                    <img src="./img/main__partners/logos/mumu-logo.svg" class="partners__logo">
+                                </div>
+                                <p class="partners__about">
+                                    «Му-му» — московская сеть ресторанов русской кухни.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="partners__slide">
+                            <div class="partners__slide-wrapper">
+                                <div class="logo">
+                                    <img src="./img/main__partners/logos/selvi-logo.svg" class="partners__logo">
+                                </div>
+                                <p class="partners__about">
+                                    Срочное оформление загранпаспорта для взрослых и детей в Москве. Визы в Шенген.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="partners__slide">
+                            <div class="partners__slide-wrapper">
+                                <div class="logo">
+                                    <img src="./img/main__partners/logos/priority-logo.svg" class="partners__logo">
+                                </div>
+                                <p class="partners__about">
+                                    Юридическаякомпания, специализирующаяся на госзаказах и тендерном консалтинге
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="partners__slide">
+                            <div class="partners__slide-wrapper">
+                                <div class="logo">
+                                    <img src="./img/main__partners/logos/unco-logo.svg" class="partners__logo">
+                                </div>
+                                <p class="partners__about">
+                                    Платформа для осознанного общения о еде
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="partners__slide">
+                            <div class="partners__slide-wrapper">
+                                <div class="logo">
+                                    <img src="./img/main__partners/logos/intercomp-logo.svg" class="partners__logo">
+                                </div>
+                                <p class="partners__about">
+                                    Аутсорсинг бизнес-процессов
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partners__arrows"></div>
+                </div>
+            </section>
+            <section class="main__why">
+                <div class="why__container-big">
+                    <div class="why__head">
+                        <h2 class="why__title">
+                            Почему среди сотен <span>выбирают нас</span>
+                        </h2>
+                        <br>
+                        <div class="why__head-decor">
+                            <img src="./img/decor/heart.png" class="why__head-decor-img">
+                            <img src="./img/decor/heart.png" class="why__head-decor-img">
+                            <img src="./img/decor/heart.png" class="why__head-decor-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="why__section">
+                    <div class="why__cosmo-wrapper">
+                        <img src="./img/main__why/cosmo.png" alt="космонавт" class="why__cosmo">
+                    </div>
+                    <div class="section__content">
+                        <div class="section__container-big">
+                            <div class="section__body">
+                                <div class="why__answer">
+                                    <div class="answer__num">01.</div>
+                                    <div class="answer__answer">
+                                        <div class="answer__title">Зрим в корень</div>
+                                        <div class="answer__more">
+                                            Подбираем дизайн, с которым бизнес будет расти.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="why__answer">
+                                    <div class="answer__num">02.</div>
+                                    <div class="answer__answer">
+                                        <div class="answer__title">Решаем задачи</div>
+                                        <div class="answer__more">
+                                            Не боимся больших и сложных задач, мы на них специализируемся.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="why__answer">
+                                    <div class="answer__num">03.</div>
+                                    <div class="answer__answer">
+                                        <div class="answer__title">Берём проект на любом этапе</div>
+                                        <div class="answer__more">
+                                            Бесшовно включаемся в процесс. Без факапов.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="why__answer">
+                                    <div class="answer__num">04.</div>
+                                    <div class="answer__answer">
+                                        <div class="answer__title">Экономим бюджет</div>
+                                        <div class="answer__more">
+                                            Спринтим и предлагаем выгодную реализацию.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="why__answer">
+                                    <div class="answer__num">05.</div>
+                                    <div class="answer__answer">
+                                        <div class="answer__title">Находим точки роста</div>
+                                        <div class="answer__more">
+                                            Отсекаем лишнее, предлагаем оптимизацию.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="why__answer">
+                                    <div class="answer__num">06.</div>
+                                    <div class="answer__answer">
+                                        <div class="answer__title">Создаём уникальность</div>
+                                        <div class="answer__more">
+                                            Делаем ставку на эксклюзивность, не штампуем шаблоны.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="why__answer">
+                                    <div class="answer__num">07.</div>
+                                    <div class="answer__answer">
+                                        <div class="answer__title">Поддерживаем свои проекты</div>
+                                        <div class="answer__more">
+                                            Помогаем хедам продвигать то, что упаковали.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__about-us">
+                <div class="about-us__about-us">
+                    <div class="about-us__container-big">
+                        <p class="about-us__paragraph">Для нас не имеет значения: <br>в какой точке мира вы
+                            находитесь,
+                            и на каком языке говорят ваши клиенты.</p>
+                        <p class="about-us__paragraph">С нами дизайн работает, <br>а инвестиции окупаются.</p>
+                    </div>
+                </div>
+                <div class="about-us__decor">
+                    <img src="./img/decor/line-decor.svg" class="about-us__decor-img">
+                </div>
+                <div class="about-us__achievements">
+                    <div class="about-us__container-big">
+                        <div class="achievements__wrapper">
+                            <p class="achievement__paragraph">
+                                Наша команда опекает бездомных собак в приюте Анталии. Под патронажем Ravix более
+                                100
+                                четвероногих питомцев.
+                            </p>
+                            <p class="achievement__paragraph">
+                                10% от всех наших доходов перечислются в фонды защиты природы. Мы поддерживаем
+                                экологические акции и сами их регулярно организовываем.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__write-me">
+                <div class="write-me__container-big">
+                    <div class="write-me__info">
+                        <h2 class="write-me__title">Напишите нам</h2>
+                        <a href="mailto:hello@ravix.ru" class="write-me__email">hello@ravix.ru</a>
+                        <div class="write-me__other">
+                            <div>
+                                <a href="#" class="write-me__link">Behance</a>
+                                <a href="#" class="write-me__link">Dribble</a>
+                            </div>
+                            <div>
+                                <a href="tel:+7(495)777-00-00" class="write-me__link">+7 (495) 777-00-00</a>
+                                <a href="#" class="write-me__link">Vkontakte</a>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="write-me__form">
+                        <input type="text" class="form__input" placeholder="Имя*">
+                        <input type="text" class="form__input" pattern="0-9" placeholder="Телефон*">
+                        <input type="email" class="form__input" placeholder="E-mail">
+                        <input type="text" class="form__input" placeholder="Задача">
+                        <div class="add-file">
+                            <input type="file" class="form-file">
+                            <div class="input__frame">
+                                <div class="frame__pin">
+                                    <img src="./img/icons/plus.svg" class="frame__pin-icon">
+                                    <span>Прикрепить файл</span>
+                                </div>
+                            </div>
+                            <a href="#" class="form__example">Пример брифа</a>
+                        </div>
+                        <button class="form__button">Отправить заявку</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/e2.js"></script>
+    <!-- <script src="./js/events.js"></script> -->
+    <script src="./js/hide-cosmo.js"></script>
+</body>
+
+</html>

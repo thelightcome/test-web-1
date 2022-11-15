@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Asgard-Bold';
+    src: url('../fonts/AsgardTrial-BoldTrial.woff2') format('woff2'),
+        url('../fonts/AsgardTrial-BoldTrial.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asgard-Fat';
+    src: url('../fonts/AsgardTrial-FatTrial.woff2') format('woff2'),
+        url('../fonts/AsgardTrial-FatTrial.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asgard-Fit-Bold';
+    src: url('../fonts/AsgardTrial-FitBoldTrial.woff2') format('woff2'),
+        url('../fonts/AsgardTrial-FitBoldTrial.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asgard-Wide-Bold';
+    src: url('../fonts/AsgardTrial-WideBoldTrial.woff2') format('woff2'),
+        url('../fonts/AsgardTrial-WideBoldTrial.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asgard-Wide-Medium';
+    src: url('../fonts/AsgardTrial-WideMediumTrial.woff2') format('woff2'),
+        url('../fonts/AsgardTrial-WideMediumTrial.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
