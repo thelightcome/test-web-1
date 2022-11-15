@@ -33,6 +33,7 @@
   let prevScrollVal = $(window).scrollTop();
   let currentValue, shift;
   let duration = 500;
+  let endPoint = (maxValue - 1) * height;
 
   $(window).on("onContentLoaded", scrollHandle);
 
@@ -43,17 +44,21 @@
     shift = currentValue - overflowTop;
     prevScrollVal = currentValue;
 
-    if (shift < 0 && item !== 0) {
-      sliderWrapper.css('transform', 'translateY(0px)');
-      setSlide(0);
-    } else if (shift + height > maxValue * height && item !== maxValue - 1) {
-      sliderWrapper.css('transform', 'translateY(' + (maxValue - 1) * height + 'px)');
-      setSlide(maxValue - 1);
-    }
-    else if (shift > 0 && shift <= (maxValue - 1) * height) {
-      sliderWrapper.css('transform', 'translateY(' + shift + 'px)');
-      let setItem = Math.floor(shift / (height - height / maxValue));
+    if (shift > 0 && shift < endPoint) {
+      sliderWrapper.css('position', 'fixed');
+      sliderWrapper.css('top', '0px');
+      let setItem = Math.floor(shift / height);
       setSlide(setItem);
+    } else {
+      sliderWrapper.css('position', 'absolute');
+      if (shift < 0) {
+        setSlide(0);
+        sliderWrapper.css('top', '0px');
+      } else if (shift > endPoint) {
+        setSlide(maxValue - 1);
+        console.log(endPoint)
+        sliderWrapper.css('top', endPoint + 'px');
+      }
     }
   }
 
