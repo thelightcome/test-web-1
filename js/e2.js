@@ -27,22 +27,26 @@
   });
 
   const maxValue = linkList.length;
-
+  const HEIGHT_DEL = 2.5;
   let overflowTop = overflow.offset().top;
   let height = sliderWrapper.height();
-  overflow.css('height', (maxValue + 1) * height + 'px');
+  let distHeight = height / HEIGHT_DEL;
+  let overflowHeight = (maxValue + 1) * distHeight + height;
+  overflow.css('height', overflowHeight + 'px');
 
   let item = 0;
   let currentValue, shift;
   let duration = 500;
-  let endPoint = maxValue * height;
+  let endPoint = maxValue * distHeight;
   let position = 'absolute';
 
 
   $(window).on("resize", () => {
     overflowTop = overflow.offset().top;
     height = sliderWrapper.height();
-    overflow.css('height', (maxValue + 1) * height + 'px');
+    distHeight = height / HEIGHT_DEL;
+    overflowHeight = (maxValue + 1) * distHeight + height;
+    overflow.css('height', overflowHeight + 'px');
   });
 
   $(document).ready(function () {
@@ -66,7 +70,7 @@
         sliderWrapper.css('position', position);
         sliderWrapper.css('top', '0px');
       }
-      let setItem = Math.floor(shift / height);
+      let setItem = Math.floor(shift / distHeight);
       setSlide(setItem);
     } else {
       if (position === 'fixed') {
