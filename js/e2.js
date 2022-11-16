@@ -31,7 +31,7 @@
   let overflowTop = overflow.offset().top;
   let height = sliderWrapper.height();
   let distHeight = height / HEIGHT_DEL;
-  let overflowHeight = (maxValue + 1) * distHeight + height;
+  let overflowHeight = (maxValue) * distHeight + height;
   overflow.css('height', overflowHeight + 'px');
 
   let item = 0;
@@ -45,8 +45,10 @@
     overflowTop = overflow.offset().top;
     height = sliderWrapper.height();
     distHeight = height / HEIGHT_DEL;
-    overflowHeight = (maxValue + 1) * distHeight + height;
+    overflowHeight = (maxValue) * distHeight + height;
     overflow.css('height', overflowHeight + 'px');
+    endPoint = maxValue * distHeight;
+    scrollHandle();
   });
 
   $(document).ready(function () {
@@ -80,7 +82,7 @@
       if (shift < 0) {
         setSlide(0);
         sliderWrapper.css('top', '0px');
-      } else if (shift > endPoint) {
+      } else if (shift >= endPoint) {
         setSlide(maxValue - 1);
         sliderWrapper.css('top', endPoint + 'px');
       }
